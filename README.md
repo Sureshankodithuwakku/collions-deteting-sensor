@@ -63,6 +63,7 @@ If an impact/collision is detected:
   (Optional) Engine cutoff will be triggered via relay 🔒
 
 🔍 Code Review & Improvements
+
 ✅ What’s Good
   Collects 201 samples × 6 features = 1206 values, matching your NUM_FEATURES.
   
