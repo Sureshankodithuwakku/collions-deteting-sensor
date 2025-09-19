@@ -10,17 +10,19 @@ When an impact is detected, the system:
 
 📌 Features
 
-  ✔️ Real-time motion data analysis using ESP32
+    ✔️ Real-time motion data analysis using ESP32
+    
+    ✔️ ML model trained on normal, hit, and accident data
+    
+    ✔️ Deployment on Seeed Studio board
+    
+    ✔️ Collision/accident detection with high accuracy
+    
+    ✔️ Visual alert via LED indicator
+    
+    ✔️ Optional engine cutoff mechanism for safety
+
   
-  ✔️ ML model trained on normal, hit, and accident data
-  
-  ✔️ Deployment on Seeed Studio board
-  
-  ✔️ Collision/accident detection with high accuracy
-  
-  ✔️ Visual alert via LED indicator
-  
-  ✔️ Optional engine cutoff mechanism for safety
 
 🛠️ Hardware Requirements
 
@@ -36,45 +38,57 @@ When an impact is detected, the system:
 
 💻 Software Requirements
 
-Arduino IDE 
-
-Python (for ML training & preprocessing)
-
-Required Arduino libraries:
-
-  Wire.h
+  Arduino IDE 
   
-  sklearn
+  Python (for ML training & preprocessing)
   
-  Adafruit MPU6050
+  Required Arduino libraries:
+    
+    Wire.h
+    
+    sklearn
+    
+    Adafruit MPU6050
+
+
 
 🚀 Usage
 
-Power on the ESP32 system
-
-Mount the sensors securely on the motorcycle/scooter
-
-During riding, the board continuously monitors live sensor data
-
-If an impact/collision is detected:
-
-  LED will blink or stay on 🚨
+  Power on the ESP32 system
   
-  (Optional) Engine cutoff will be triggered via relay 🔒
+  Mount the sensors securely on the motorcycle/scooter
+  
+  During riding, the board continuously monitors live sensor data
+  
+  If an impact/collision is detected:
+  
+    LED will blink or stay on 🚨
+    
+    (Optional) Engine cutoff will be triggered via relay 🔒
+  
+
+
 
 🔍 Code Review & Improvements
 
-✅ What’s Good
-  Collects 201 samples × 6 features = 1206 values, matching your NUM_FEATURES.
+  ✅ What’s Good
   
-  Uses the EloquentTinyML RandomForest model (:ML::Port::RandomForest).
+    Collects 201 samples × 6 features = 1206 values, matching your NUM_FEATURES.
+    
+    Uses the EloquentTinyML RandomForest model (: ML::Port::RandomForest).
+    
+    LED indicators are mapped to states (Normal, Accident, Hit).
+    
+    Proper IMU initialization and error handling.
   
-  LED indicators are mapped to states (Normal, Accident, Hit).
   
-  Proper IMU initialization and error handling.
 
 ⚡Future Improvements
-  Integration with IoT (e.g., GSM/WiFi module) for emergency SMS alerts
-  GPS-based crash location reporting
-  More advanced deep learning models for better accuracy
-  Mobile app for monitoring
+
+    Integration with IoT (e.g., GSM/WiFi module) for emergency SMS alerts
+    
+    GPS-based crash location reporting
+    
+    More advanced deep learning models for better accuracy
+    
+    Mobile app for monitoring
