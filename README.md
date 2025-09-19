@@ -26,15 +26,15 @@ When an impact is detected, the system:
 
 🛠️ Hardware Requirements
 
-  ESP32 development board with seeed
-  
-  Accelerometer & gyroscope sensors
-  
-  LED module
-  
-  Relay module 
-  
-  Power source 
+      ESP32 development board with seeed
+      
+      Accelerometer & gyroscope sensors
+      
+      LED module
+      
+      Relay module 
+      
+      Power source 
 
 💻 Software Requirements
 
@@ -54,18 +54,18 @@ When an impact is detected, the system:
 
 🚀 Usage
 
-  Power on the ESP32 system
+      Power on the ESP32 system
+      
+      Mount the sensors securely on the motorcycle/scooter
+      
+      During riding, the board continuously monitors live sensor data
+      
+      If an impact/collision is detected:
   
-  Mount the sensors securely on the motorcycle/scooter
-  
-  During riding, the board continuously monitors live sensor data
-  
-  If an impact/collision is detected:
-  
-    LED will blink or stay on 🚨
-    
-    (Optional) Engine cutoff will be triggered via relay 🔒
-  
+        LED will blink or stay on 🚨
+        
+        (Optional) Engine cutoff will be triggered via relay 🔒
+      
 
 
 
@@ -92,3 +92,6 @@ When an impact is detected, the system:
     More advanced deep learning models for better accuracy
     
     Mobile app for monitoring
+
+
+![WhatsApp Image 2025-09-20 at 01 12 50_ccdb70f4](https://github.com/user-attachments/assets/454b941e-a582-4a42-bb4d-383245daff98)
